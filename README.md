@@ -18,3 +18,9 @@ V nasi rekurzivni funkci budeme zpracovavat jednotlive rohy. Kde nejdrive nakres
 Zatim, ale rohy na sudych indexech a lichych indexech se lisi v rotaci. Muzeme si vsimnout zrcadlove symetrie a pred kazdym zavolani dalsi rekurze akorat otocit platno o 180 stupnu.
 
 !["Recursive function"](recursive_function.png)
+
+
+## Casova komplexita
+Jelikoz pri kazdem zavolanim rekurze provedem konstatni pocet operaci a funkce se vola dokud *radius* nedosahne 0, pricemz vzdy odecitame *offs*. 
+
+Casova komplexita proto bude *O(x/offs)*, kde *x* je delka prvni cary a *offs* je vzdalenost mezi smyckami.
